@@ -8,8 +8,7 @@ trigger:
 pool: 
  name: default  #bhttps://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml#software
  demands: 
- - Agent.Version -equals 2.20 
-
+ - Agent.Version -equals 2.20
 steps:
 - task: Maven@3
   inputs:
