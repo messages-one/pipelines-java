@@ -11,6 +11,7 @@ steps:
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'D:\soft\liberica-jdk-17'
     mavenDirectory: 'C:\soft\apache-maven'
+    mavenVersionOption: Path
     jdkVersionOption: '17'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
