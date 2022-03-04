@@ -24,4 +24,4 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-    goals: clean package -Pspring-boot:run
+    goals: clean package spring-boot:run
