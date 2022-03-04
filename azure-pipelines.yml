@@ -17,6 +17,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'D:\soft\liberica-jdk-11'
     jdkVersionOption: '11'
+    jdkUserInputPath: 'D:\soft\liberica-jdk-11'
     mavenVersionOption: 'Path'
     mavenDirectory: 'c:\soft\apache-maven'
     mavenSetM2Home: false
