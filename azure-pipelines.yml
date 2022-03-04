@@ -11,6 +11,7 @@ pool:
  - Agent.Version -equals 2.200.2
 steps:
 - task: Maven@3
+  displayName: ean clbuild and package the app
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
@@ -24,4 +25,21 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-    goals: clean package spring-boot:run
+    goals: clean package
+    
+
+#- task: Maven@3
+#  displayName: Build Docker image using buildpack
+#  inputs:
+#      mavenPomFile: 'pom.xml'
+#      goals: 'spring-boot:build-image'
+#      publishJUnitResults: false
+#      javaHomeOption: 'D:\soft\liberica-jdk-11'
+#      jdkVersionOption: '11'
+#      jdkUserInputPath: 'D:\soft\liberica-jdk-11'
+#      mavenVersionOption: 'Path'
+#      mavenDirectory: 'c:\soft\apache-maven'
+#      mavenSetM2Home: false
+#      mavenAuthenticateFeed: false
+#      effectivePomSkip: false
+#      sonarQubeRunAnalysis: false
