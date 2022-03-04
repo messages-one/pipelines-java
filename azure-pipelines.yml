@@ -15,7 +15,7 @@ steps:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
+    javaHomeOption: 'D:\soft\liberica-jdk-11'
     jdkVersionOption: '11'
     mavenVersionOption: 'Path'
     mavenDirectory: 'c:\soft\apache-maven'
